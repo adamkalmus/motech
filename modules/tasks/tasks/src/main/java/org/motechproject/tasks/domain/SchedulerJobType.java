@@ -1,7 +1,8 @@
 package org.motechproject.tasks.domain;
 
 /**
- * The <code>SchedulerJobType</code> enumerates possible types of jobs to be scheduled in <code>MotechSchedulerService</code>.
+ * The <code>SchedulerJobType</code> enumerates possible types of jobs to be scheduled using
+ * <code>MotechSchedulerService</code>.
  *
  *  @see org.motechproject.scheduler.service.MotechSchedulerService
  */

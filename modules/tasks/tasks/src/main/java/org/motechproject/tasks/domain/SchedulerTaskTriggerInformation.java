@@ -1,6 +1,7 @@
 package org.motechproject.tasks.domain;
 
 
+import org.joda.time.DateTime;
 import org.joda.time.Period;
 import org.motechproject.commons.date.model.DayOfWeek;
 import org.motechproject.commons.date.model.Time;
@@ -33,10 +34,10 @@ public class SchedulerTaskTriggerInformation extends TaskTriggerInformation {
     private SchedulerJobType type;
 
     @Field
-    private String startDate;
+    private DateTime startDate;
 
     @Field
-    private String endDate;
+    private DateTime endDate;
 
     @Field
     private int interval;
@@ -82,19 +83,19 @@ public class SchedulerTaskTriggerInformation extends TaskTriggerInformation {
         this.type = type;
     }
 
-    public String getStartDate() {
+    public DateTime getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(String startDate) {
+    public void setStartDate(DateTime startDate) {
         this.startDate = startDate;
     }
 
-    public String getEndDate() {
+    public DateTime getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(String endDate) {
+    public void setEndDate(DateTime endDate) {
         this.endDate = endDate;
     }
 
